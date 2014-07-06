@@ -1,0 +1,16 @@
+* {
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+html {font-size: 62.5%;}
+body {background: #fff;  line-height:1.5; height: 100%; padding:0; min-width:300px;  /*min-width: 1130px;*/ font-family:Arial; font-weight: normal; font-style:normal;  margin:0; width:100%; text-align: left; position: relative;}
+
+a {color:black;}
+
+article {float: right; min-height: 400px; padding: 20px; width: 80%; clear: both; border:1px dotted black; margin: 0 5% 20px 0;}
+
+#timenav {position: fixed; margin: 0; padding: 0; left: 30px; top: 10px;}
+a.current {color:red;}

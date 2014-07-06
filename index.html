@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Slidescroll</title>
+
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		
+		<meta name="description" content="">
+
+		<link rel="icon" href="img/favicons/favicon.ico" type="image/x-icon">
+
+		<link rel="stylesheet" type="text/css" href="main.css" media="screen" />
+       
+	</head>
+
+<body>    
+<header class="l-header">
+    <nav class="menu-side">
+        <ul class="main" id="timenav">
+              <li><a href="#one">One</a></li>
+              <li><a href="#two">Two</a></li>
+              <li><a href="#three">Three</a></li>
+              <li><a href="#four">Four</a></li>
+              <li><a href="#five">Five</a></li>
+              <li><a href="#six">Six</a></li>
+              <li><a href="#seven">Seven</a></li>
+              <li><a href="#eight">Eight</a></li>
+              <li><a href="#nine">Nine</a></li>
+              <li><a href="#ten">Ten</a></li>
+          </ul>
+    </nav>
+</header>
+    <section>
+        <article id="one" class="timeline-section">
+            <p>Section One</p>
+        </article>
+        <article id="two" class="timeline-section">
+            <p>Section Two</p>
+        </article>
+        <article id="three" class="timeline-section">
+            <p>Section Three</p>
+        </article>
+        <article id="four" class="timeline-section">
+            <p>Section Four</p>
+        </article>
+        <article id="five" class="timeline-section">
+            <p>Section Five</p>
+        </article>
+        <article id="six" class="timeline-section">
+            <p>Section Six</p>
+        </article>
+        <article id="seven" class="timeline-section">
+            <p>Section Seven</p>
+        </article>
+        <article id="eight" class="timeline-section">
+            <p>Section Eight</p>
+        </article>
+        <article id="nine" class="timeline-section">
+            <p>Section Nine</p>
+        </article>
+        <article id="ten" class="timeline-section">
+            <p>Section Ten</p>
+        </article>
+    </section>
+
+
+<footer>
+    
+</footer>
+	<script>window.jQuery || document.write('<script src="jquery-1.9.1.min.js"><\/script>')</script>
+        <script type="text/javascript" src="easing.js"></script>
+	<script type="text/javascript" src="slidescroll.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                console.log('ready');
+                // slidescroll
+                $('.placholder-timeline').slidescroll({
+                        idname      : '.timeline-section',
+                        navname     : '#timenav',
+                        speed       : 500,
+                        plusScroll  : 150,
+                        plusMinus   : 'minus'
+                 });
+            });
+            
+        </script>
+
+</body>
+</html>
